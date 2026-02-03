@@ -9,6 +9,8 @@ A professional software system for the automated discovery of spatially distribu
 - **Noise-Robust Physics**: Automated noise-profiling and Gaussian-smoothed differentiation kernels for sparse transcriptomics data.
 - **Mathematical Falsification**: Built-in stability analysis using Jacobian eigenvalues to ensure biological plausibility.
 - **Digital Twinning**: Capability to perform Counterfactual Simulations (e.g., in silico morphogen removal) with compliant CSV exports.
+- **Visualization Suite**: High-fidelity spatial heatmap rendering and topology plotting via `visualizer.py`.
+- **Deployment Manifest**: Full system specifications and metadata formalized in `manifest.json`.
 
 ## Architecture
 

@@ -1,0 +1,29 @@
+{
+    "project_name": "ORDINAR CA-SPID Engine",
+    "version": "5.0.0-sigma",
+    "architecture": "PINN-SINDy Hybrid Agentic Swarm",
+    "lead_architect": "Sourish Senapati",
+    "institution": "Jadavpur University",
+    "competition": "IIT Bombay AZeotropy Predictioneer 2026",
+    "components": {
+        "solver": "real_gpu_solver.py",
+        "numerical_engine": "caspid_engine.py",
+        "orchestrator": "workflow.py",
+        "agents": "agents.py",
+        "visualization": "visualizer.py"
+    },
+    "hardware_specs": {
+        "target_gpu": "NVIDIA RTX 4050 (6GB VRAM)",
+        "precision": "torch.float32",
+        "compute_mode": "Vectorized Batch-Parallel"
+    },
+    "features": [
+        "PINN Differentiable Smoothing",
+        "5-Sigma Evolutionary Discovery",
+        "Steady-State Constraint Anchoring",
+        "LangGraph Self-Healing Workflow",
+        "Mathematical Stability Auditing",
+        "Save on Interrupt Reliability"
+    ],
+    "status": "Production-Ready / Training In Progress"
+}
