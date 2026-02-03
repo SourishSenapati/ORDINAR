@@ -1,0 +1,18 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+env/
+venv/
+.env
+
+# Competition Artifacts
+*.zip
+Final_Submission_*/
+Clean_Agentic_Submission/
+Final_Software_Suite/
+
+# OS
+.DS_Store
+Thumbs.db
