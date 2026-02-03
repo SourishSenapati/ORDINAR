@@ -2,11 +2,11 @@
 Premium Spatial Visualization Suite for CA-SPID.
 Provides high-fidelity renders of gene expression patterns and GRN topologies.
 """
+import os
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
-import os
 
 
 class SpatialVisualizer:
@@ -25,15 +25,17 @@ class SpatialVisualizer:
             self.df = None
             print(f"[Visualizer] Warning: {data_path} not found.")
 
-    def plot_spatial_snapshots(self, time_points=[0, 1.0, 2.0, 3.0]):
+    def plot_spatial_snapshots(self, time_points=None):
         """
         Renders a grid of spatial snapshots for each gene at specific time points.
         """
+        if time_points is None:
+            time_points = [0, 1.0, 2.0, 3.0]
         if self.df is None:
             return
 
         num_times = len(time_points)
-        fig, axes = plt.subplots(num_times, 4, figsize=(16, 4 * num_times))
+        _, axes = plt.subplots(num_times, 4, figsize=(16, 4 * num_times))
         plt.subplots_adjust(hspace=0.3, wspace=0.3)
 
         for i, t in enumerate(time_points):
